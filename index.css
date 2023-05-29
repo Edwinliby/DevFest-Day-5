@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: #000; */
+}
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    height: 4rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.youtubelogo,
+.searchbar {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.youtubelogo img {
+    width: 5rem;
+}
+
+.searchbar input {
+    padding: .5rem 1rem;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background-color: transparent;
+    border: 1px solid #adadad;
+    width: 30rem;
+}
+
+.searchbtn {
+    background-color: #adadad;
+    padding: .5rem 1rem;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    color: #fff;
+    margin-left: -8px;
+}
+
+.signup button {
+    background-color: transparent;
+    color: #1f32ff;
+    padding: .5rem 1rem;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    border: 1px solid #1f32ff;
+}
+
+.micro {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: rgb(128, 128, 128, .3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.1rem;
+    border-radius: 100%;
+}
+
+.dashboard {
+    position: fixed;
+    margin-top: 4rem;
+    left: 0;
+    height: 100%;
+    width: 18%;
+    background-color: #000;
+    color: #fff;
+    overflow-y: scroll;
+}
+
+hr {
+    border: 1px solid #434343;
+    margin: .5rem 0;
+}
+
+.dashboard div {
+    background-color: transparent;
+    width: calc(100% - 2rem);
+    margin: .1rem 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.dashboard div:first-child {
+    background-color: #434343;
+}
+
+.dashboard div:hover {
+    background-color: #434343;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.dashboard:hover::-webkit-scrollbar {
+    display: block;
+    width: 10px;
+}
+
+.dashboard::-webkit-scrollbar-track {
+    background-color: #000;
+}
+
+.dashboard::-webkit-scrollbar-thumb {
+    background-color: #787878;
+    border-radius: 10px;
+}
+
+.content {
+    width: 100%;
+    margin-left: 9%;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background-color: #000000;
+    color: #fff;
+    justify-content: center;
+}
+
+.card {
+    margin-top: 4rem;
+    width: 23rem;
+    height: fit-content;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.cardinfo {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.cardinfo img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.cardinfo div p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: poppins;
+}
+
+@media (width<700px) {
+
+    .searchbar {
+        width: 12rem;
+    }
+
+    .dashboard {
+        display: none;
+    }
+
+    .content {
+        margin-left: 0;
+        width: 100%;
+    }
+}
